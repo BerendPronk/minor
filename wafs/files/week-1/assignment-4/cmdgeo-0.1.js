@@ -89,11 +89,22 @@
 	var ET = new EventTarget();
 
 	var geo = {
+		config: {
+			route: null,
+			routeList: null,
+			location: null,
+			newPos: null,
+			pos1: null,
+			pos2: null,
+			markerLatLng: null,
+			marker: null
+		},
+
 		// Test of GPS beschikbaar is (via geo.js) en vuur een event af
 		init: function () {
 			debug.debugMessage("Controleer of GPS beschikbaar is...");
 
-			ET.addListener(config.gpsAvailable, geo._startInterval);
+			ET.addListener(config.gpsAvailable, geo.startInterval);
 			ET.addListener(config.gpsUnavailable, function() {
 				debug.debugMessage("GPS is niet beschikbaar.");
 			});
@@ -106,45 +117,45 @@
 		},
 
 		// Start een interval welke op basis van refreshRate de positie updated
-		_startInterval: function (event) {
+		startInterval: function (event) {
 			debug.debugMessage("GPS is beschikbaar, vraag positie.");
 
-			geo._updatePosition();
+			geo.updatePosition();
 
-			config.interval = this.setInterval(geo._updatePosition, config.refreshRate);
+			config.interval = this.setInterval(geo.updatePosition, config.refreshRate);
 
-			ET.addListener(config.positionUpdated, geo._checkLocations);
+			ET.addListener(config.positionUpdated, geo.checkLocations);
 		},
 
 		// Vraag de huidige positie aan geo.js, stel een callback in voor het resultaat
-		_updatePosition: function () {
+		updatePosition: function () {
 			config.intervalCounter++;
 
-			geo_position_js.getCurrentPosition(geo._setPosition, debug._geoErrorHandler, {
+			geo_position_js.getCurrentPosition(geo.setPosition, debug.geoErrorHandler, {
 				enableHighAccuracy: true
 			});
 		},
 
 		// Callback functie voor het instellen van de huidige positie, vuurt een event af
-		_setPosition: function (position) {
+		setPosition: function (position) {
 			config.currentPosition = position;
 			ET.fire(config.positionUpdated);
 			debug.debugMessage(config.intervalCounter + " positie lat:" + position.coords.latitude + " long:" + position.coords.longitude);
 		},
 
 		// Controleer de locaties en verwijs naar een andere pagina als we op een locatie zijn
-		_checkLocations: function (event) {
+		checkLocations: function (event) {
 
 			// Liefst buiten google maps om... maar helaas, ze hebben alle coole functies
 			for (var i = 0; i < config.locationArray.length; i++) {
-				var locatie = {
+				geo.config.location = {
 					coords: {
 						latitude: config.locationArray[i][3],
 						longitude: config.locationArray[i][4]
 					}
 				};
 
-				if (geo._calculateDistance(locatie, config.currentPosition) < config.locationArray[i][2]) {
+				if (geo.calculateDistance(locatie, config.currentPosition) < config.locationArray[i][2]) {
 
 					// Controle of we NU op die locatie zijn, zo niet gaan we naar de betreffende page
 					if (window.location != config.locationArray[i][1] && localStorage[config.locationArray[i][0]] == "false") {
@@ -170,9 +181,9 @@
 		},
 
 		// Bereken het verchil in meters tussen twee punten
-		_calculateDistance: function (p1, p2) {
-			var pos1 = new google.maps.LatLng(p1.coords.latitude, p1.coords.longitude);
-			var pos2 = new google.maps.LatLng(p2.coords.latitude, p2.coords.longitude);
+		calculateDistance: function (p1, p2) {
+			geo.config.pos1 = new google.maps.LatLng(p1.coords.latitude, p1.coords.longitude);
+			geo.config.pos2 = new google.maps.LatLng(p2.coords.latitude, p2.coords.longitude);
 			return Math.round(google.maps.geometry.spherical.computeDistanceBetween(pos1, pos2), 0);
 		},
 
@@ -196,7 +207,7 @@
 			debug.debugMessage("Genereer een Google Maps kaart en toon deze in #" + canvasId);
 			config.map = new google.maps.Map(document.getElementById(canvasId), myOptions);
 
-			var routeList = [];
+			geo.config.routeList = [];
 
 			// Voeg de markers toe aan de map afhankelijk van het tourtype
 			debug.debugMessage("Locaties intekenen, tourtype is: " + tourType);
@@ -206,7 +217,7 @@
 				// Met kudos aan Tomas Harkema, probeer local storage, als het bestaat, voeg de locaties toe
 				try {
 
-					if (localStorage.visited === undefined || isNumber(localStorage.visited)) {
+					if (localStorage.visited === undefined || utils.isNumber(localStorage.visited)) {
 						localStorage[config.locationArray[i][0]] = false;
 					} else {
 						return null;
@@ -215,10 +226,10 @@
 					debug.debugMessage("Localstorage kan niet aangesproken worden: " + error);
 				}
 
-				var markerLatLng = new google.maps.LatLng(config.locationArray[i][3], config.locationArray[i][4]);
+				geo.config.markerLatLng = new google.maps.LatLng(config.locationArray[i][3], config.locationArray[i][4]);
 				routeList.push(markerLatLng);
 
-				config.markerArray[i] = {};)
+				config.markerArray[i] = {};
 
 				for (var attr in locatieMarker) {
 					config.markerArray[i][attr] = locatieMarker[attr];
@@ -226,7 +237,7 @@
 
 				config.markerArray[i].scale = config.locationArray[i][2] / 3;
 
-				var marker = new google.maps.Marker({
+				geo.config.marker = new google.maps.Marker({
 					position: markerLatLng,
 					map: map,
 					icon: config.markerArray[i],
@@ -240,7 +251,7 @@
 				// Trek lijnen tussen de punten
 				debug.debugMessage("Route intekenen");
 
-				var route = new google.maps.Polyline({
+				geo.config.route = new google.maps.Polyline({
 					clickable: false,
 					map: map,
 					path: routeList,
@@ -259,31 +270,25 @@
 			});
 
 			// Zorg dat de kaart geupdated wordt als het positionUpdated event afgevuurd wordt
-			ET.addListener(config.positionUpdated, geo.updatePosition);
+			ET.addListener(config.positionUpdated, geo.updateNewPosition);
 		},
 
 
 		// Update de positie van de gebruiker op de kaart
-		updatePosition: function (event) {
+		updateNewPosition: function (event) {
 
 			// use currentPosition to center the map
-			var newPos = new google.maps.LatLng(config.currentPosition.coords.latitude, config.currentPosition.coords.longitude);
+			geo.config.newPos = new google.maps.LatLng(config.currentPosition.coords.latitude, config.currentPosition.coords.longitude);
 
 			config.map.setCenter(newPos);
 			config.currentPositionMarker.setPosition(newPos);
 		}
 	};
 
-	geo.init();
-
-	function isNumber(n) {
-		return !isNaN(parseFloat(n)) && isFinite(n);
-	}
-
 	// FUNCTIES VOOR DEBUGGING
 	var debug = {
 
-		_geoErrorHandler: function(code, message) {
+		geoErrorHandler: function(code, message) {
 			debug.debugMessage("geo.js error " + code + ": " + message);
 		},
 
@@ -300,5 +305,13 @@
 			config.customDebugging = true;
 		}
 	};
+
+	var utils = {
+		isNumber: function(n) {
+			return !isNaN(parseFloat(n)) && isFinite(n);
+		}
+	};
+
+	geo.init();
 
 }) ();
