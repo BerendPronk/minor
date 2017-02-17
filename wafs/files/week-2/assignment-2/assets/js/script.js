@@ -16,7 +16,7 @@
 
 		mode: null,
 
-		root: '/',
+		root: 'https://berendpronk.github.io/minor/wafs/files/week-2/assignment-2/',
 
 		config: function(opts) {
 			this.mode = opts && opts.mode && opts.mode == 'history'
