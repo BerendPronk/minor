@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<title>CSSTTR - Living Styleguide</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700|Oswald|Playfair+Display+SC" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+</head>
+<body>
+
+	<h1>Living Styleguide</h1>
+
+	<section id="login">
+		<form action="/" method="post">
+			<fieldset>
+				<label for="field-email">Email</label>
+				<input type="email" id="field-email" name="field-email" autocomplete="email" required autofocus>
+				<span>
+					<svg viewBox="0 0 171.2 188.9">
+						<path class="st0" d="M171,90.2c-0.6,14.9-5.1,27.7-13.4,38.6s-20.7,16.3-37.2,16.3c-5.5,0-10.2-1.5-14.2-4.6s-6.8-7.4-8.4-13
+							c-2.8,5.7-6.3,10.1-10.5,12.9c-4.2,2.9-9.2,4.3-14.9,4.3c-10.1,0-17.8-4-23.1-12s-7.3-18.6-5.9-31.9c1.8-17,6.7-30.5,14.9-40.8
+							c8.1-10.2,18-15.3,29.7-15.3c8.2,0,14.7,0.9,19.7,2.6c5,1.8,10.4,4.5,16.4,8.1l-0.3,0.4h0.5l-5.2,57.4c-0.3,5.9,0.1,9.9,1.2,12.1
+							c1.1,2.2,2.6,3.3,4.5,3.3c7.6,0,13.6-3.6,18.2-10.9c4.6-7.3,7.1-16.4,7.7-27.5c1.1-22.9-3.4-40.8-13.5-53.6
+							c-10.1-12.8-25.6-19.2-46.6-19.2c-20.4,0-36.6,6.9-48.7,20.7S23.3,70.7,22.3,94.5c-1.1,23.2,3.7,41.5,14.6,54.9s26.6,20.2,47,20.2
+							c5.7,0,11.6-0.6,17.7-1.9c6.1-1.3,11.4-2.8,15.9-4.7l3.9,16.8c-4.5,2.8-10.3,5.1-17.3,6.6c-7,1.6-13.8,2.4-20.5,2.4
+							c-27.3,0-48.3-8.4-63.1-25.2S-1,123.7,0.1,94.5c1.2-29,9.9-52,26.2-69C42.5,8.5,64.1,0,91,0c26.4,0,46.6,8,60.7,24.1
+							C165.6,40.2,172.1,62.2,171,90.2z M68.7,100.8c-0.6,8.1,0,14.2,1.8,18.4c1.8,4.2,4.7,6.2,8.8,6.2c3.6,0,6.9-1,9.8-3
+							c2.9-2,5.4-5.8,7.6-11.3l4.1-45.8c-1.5-0.3-2.9-0.6-4.4-0.9c-1.4-0.2-2.8-0.4-4.3-0.4c-7,0-12.4,3.1-16.1,9.2
+							C72.2,79.4,69.8,88.5,68.7,100.8z"/>
+					</svg>
+				</span>
+			</fieldset>
+
+			<fieldset>
+				<label for="field-password">Password</label>
+				<input type="password" id="field-password" name="field-password" pattern=".{6,}" title="Minimum of 6 characters required" required>
+				<span>
+					<svg viewBox="0 0 171.2 188.9">
+						<path class="st0" d="M171.2,83.3C170.7,37.2,132.6,0,85.6,0S0.5,37.2,0,83.3h0v105.6h171.2V83.3z M85.6,20c35.8,0,65,28.3,65.4,63.3
+						H20.2C20.6,48.3,49.8,20,85.6,20z"/>
+					</svg>
+				</span>
+			</fieldset>
+
+			<fieldset>
+				<input type="checkbox" id="field-stay-logged-in" name="field-stay-logged-in" value="stay-logged-in">
+				<label for="field-stay-logged-in">Stay logged in</label>
+			</fieldset>
+
+			<fieldset>
+				<button type="submit">Login</button>
+			</fieldset>
+
+			<a href="/">Forgot password</a>
+		</form>
+	</section>
+
+	<section id="navigation">
+		<nav>
+
+			<h1>Main navigation</h1>
+
+			<ul>
+				<li><a href="#main-content" aria-label="Home, current page">Home</a></li>
+				<li data-menu="has-sub">
+					<a href="/products" data-menu="has-sub"tabindex="0">Products</a>
+
+					<ul>
+						<li><a href="/products/rock" tabindex="0">Rock</a></li>
+						<li><a href="/products/paper" tabindex="0">Paper</a></li>
+						<li><a href="/products/scissors" tabindex="0">Scissors</a></li>
+					</ul>
+
+				</li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+
+		</nav>
+	</section>
+
+	<section id="picture-with-subtitle">
+		<article>
+			<h1>This picture has a title</h1>
+			<figure>
+				<!-- Portrait -->
+				<a id="imgPortrait" href="#imgPortrait">
+					<img src="https://vasilis.nl/voto/fotos/klein/170126170241-we-hebben-een-bortusk-1280.jpg" alt="A drawing of a colorful monster on a newspaper" />
+				</a>
+
+				<!-- Landscape -->
+				<!--
+					<a id="imgLandscape" href="#imgLandscape">
+						<img src="https://vasilis.nl/voto/fotos/klein/161001174911-verhuizen-1280.jpg" alt="A bulldozer transporting a beach house along a sunny beach" />
+					</a>
+				-->
+			</figure>
+			<figcaption>
+				<p>
+					There's also this big and in depth description of the picture. You often see this on newssites or photo blogs. You could also replace the photo with a video if needed.
+				</p>
+				<footer>
+					<time datetime="2017-02-06">6-2-2017</time> © 2017 <a href="https://vasilis.nl">Vasilis van Gemert</a>
+				</footer>
+			</figcaption>
+		</article>
+	</section>
+
+	<section id="media-item">
+		<article>
+			<h1><a href="/">HTML5 accessibility, are block links hurting accessibility?</a></h1>
+
+			<img src="https://vasilis.nl/voto/fotos/klein/161001180558-de-boot-gemist-150.jpg" alt="A colorful crayon drawing on the hood of a car." />
+
+			<p>It is conforming in HTML5 for links to include block level elements such as headings and paragraphs, this was forbidden in previous versions of HTML. A recent article by @feather concludes that the inclusion of block level elements inside a link causes some Assistive Technology (AT) to misbehave.</p>
+		</article>
+	</section>
+
+	<section id="chat">
+		<ol>
+			<li data-chat="sent">
+
+				<p>
+					Hey!
+				</p>
+
+				<footer>
+					<p>Posted on <time datatime="2015-01-22T10:25">10:25 AM</time> by you</p>
+					<p data-status="READ">Has been read</p>
+				</footer>
+
+			</li>
+			<li data-chat="received">
+
+				<p>
+					Hey! Sorry I was busy
+				</p>
+
+				<footer>
+					<p>Posted on <time datatime="2017-02-03T14:19">2:19 PM</time> by John</p>
+				</footer>
+
+			</li>
+			<li data-chat="sent">
+
+				<p>
+					I sent that 2 years ago
+				</p>
+
+				<footer>
+					<p>Posted on <time datatime="2017-02-03T14:22">2:22 PM</time> by you</p>
+					<p data-status="DELIVERED">Has been delivered</p>
+				</footer>
+
+			</li>
+		</ol>
+
+		<form action="/" method="post">
+
+			<label for="field-message">Message</label>
+			<textarea name="field-message" id="field-message"></textarea>
+
+			<button type="submit">Send</button>
+
+		</form>
+	</section>
+
+	<section id="step-indicator">
+		<nav>
+
+			<h1>Finish your order</h1>
+
+			<progress value="0.25" max="1">25%</progress>
+
+			<ol>
+				<li>
+					<a href="/cart">Cart</a>
+				</li>
+				<li>
+					<a href="#main-content" aria-label="Address, current step">Address</a>
+				</li>
+				<li>
+					Payment
+				</li>
+				<li>
+					Confirm
+				</li>
+			</ol>
+
+		</nav>
+	</section>
+
+	<section id="rating">
+		<fieldset>
+			<legend>Rating</legend>
+
+			<input type="radio" name="rating" id="rating-0">
+			<label for="rating-0">
+				Sad!
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"><circle cx="32" cy="32" r="30" fill="#ef5350"/><path d="m41 49.7c-5.8-4.8-12.2-4.8-18 0-.7.6-1.3-.4-.8-1.3 1.8-3.4 5.3-6.5 9.8-6.5s8.1 3.1 9.8 6.5c.5.8-.1 1.8-.8 1.3" fill="#302424"/><path d="m10.2 24.9c-1.5 4.7.6 10 5.3 12.1 4.6 2.2 10 .5 12.7-3.7l-6.9-7.7-11.1-.7" fill="#fff"/><g fill="#302424"><path d="m14.2 25.8c-1.4 2.9-.1 6.4 2.8 7.7 2.9 1.4 6.4.1 7.7-2.8 1-1.9-9.6-6.8-10.5-4.9"/><path d="m10.2 24.9c1.6-1 3.5-1.5 5.4-1.5 1.9 0 3.8.5 5.6 1.3 1.7.8 3.3 2 4.6 3.4 1.2 1.5 2.2 3.2 2.4 5.1-1.3-1.3-2.6-2.4-4-3.4-1.4-1-2.8-1.8-4.2-2.4-1.5-.7-3-1.2-4.6-1.7-1.8-.3-3.4-.6-5.2-.8"/></g><path d="m53.8 24.9c1.5 4.7-.6 10-5.3 12.1-4.6 2.2-10 .5-12.7-3.7l6.9-7.7 11.1-.7" fill="#fff"/><g fill="#302424"><path d="m49.8 25.8c1.4 2.9.1 6.4-2.8 7.7-2.9 1.4-6.4.1-7.7-2.8-1-1.9 9.6-6.8 10.5-4.9"/><path d="m53.8 24.9c-1.6-1-3.5-1.5-5.4-1.5-1.9 0-3.8.5-5.6 1.3-1.7.8-3.3 2-4.6 3.4-1.2 1.5-2.2 3.2-2.4 5.1 1.3-1.3 2.6-2.4 4-3.4 1.4-1 2.8-1.8 4.2-2.4 1.5-.7 3-1.2 4.6-1.7 1.8-.3 3.4-.6 5.2-.8"/></g></svg>
+			</label>
+
+			<input type="radio" name="rating" id="rating-1">
+			<label for="rating-1">
+				Meh
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"><path d="m2.5 37.2c2.9 16.3 18.4 27.2 34.8 24.3 16.3-2.9 27.2-18.4 24.3-34.8-2.9-16.2-18.5-27.1-34.8-24.2-16.3 2.8-27.2 18.4-24.3 34.7" fill="#ffdd67"/><g fill="#664e27"><circle cx="42.4" cy="24.7" r="5"/><circle cx="19.7" cy="28.7" r="5"/><path d="m43.3 41.8c-5.8-1.5-12-.4-16.9 3-1.2.9 1.1 4 2.3 3.2 3.2-2.3 8.4-3.8 13.7-2.4 1.3.3 2.4-3.3.9-3.8"/></g></svg>
+			</label>
+
+			<input type="radio" name="rating" id="rating-2">
+			<label for="rating-2">
+				Nice
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"><circle cx="32" cy="32" r="30" fill="#ffdd67"/><g fill="#664e27"><circle cx="20.5" cy="26.6" r="5"/><circle cx="43.5" cy="26.6" r="5"/><path d="m44.6 40.3c-8.1 5.7-17.1 5.6-25.2 0-1-.7-1.8.5-1.2 1.6 2.5 4 7.4 7.7 13.8 7.7s11.3-3.6 13.8-7.7c.6-1.1-.2-2.3-1.2-1.6"/></g></svg>
+			</label>
+
+			<input type="radio" name="rating" id="rating-3">
+			<label for="rating-3">
+				Fantastic!
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"><circle cx="32" cy="32" r="30" fill="#ffdd67"/><path d="m49.7 34.4c-.4-.5-1.1-.4-1.9-.4-15.8 0-15.8 0-31.6 0-.8 0-1.5-.1-1.9.4-3.9 5 .7 19.6 17.7 19.6 17 0 21.6-14.6 17.7-19.6" fill="#664e27"/><path d="m33.8 41.7c-.6 0-1.5.5-1.1 2 .2.7 1.2 1.6 1.2 2.8 0 2.4-3.8 2.4-3.8 0 0-1.2 1-2 1.2-2.8.3-1.4-.6-2-1.1-2-1.6 0-4.1 1.7-4.1 4.6 0 3.2 2.7 5.8 6 5.8 3.3 0 6-2.6 6-5.8-.1-2.8-2.7-4.5-4.3-4.6" fill="#4c3526"/><path d="m24.3 50.7c2.2 1 4.8 1.5 7.7 1.5 2.9 0 5.5-.6 7.7-1.5-2.1-1.1-4.7-1.7-7.7-1.7s-5.6.6-7.7 1.7" fill="#ff717f"/><path d="m47 36c-15 0-15 0-29.9 0-2.1 0-2.1 4-.1 4 10.4 0 19.6 0 30 0 2 0 2-4 0-4" fill="#fff"/><g fill="#664e27"><circle cx="20.5" cy="23" r="5"/><circle cx="43.5" cy="23" r="5"/></g></svg>
+			</label>
+		</fieldset>
+	</section>
+
+	<section id="general">
+		<h1>Ampersand & Sibling count</h1>
+		<ul>
+			<li>1</li>
+		</ul>
+		<ul>
+			<li>2</li>
+			<li>2</li>
+		</ul>
+		<ul>
+			<li>3</li>
+			<li>3</li>
+			<li>3</li>
+		</ul>
+	</section>
+
+	<section id="loading">
+		<h1>Loading spinners</h1>
+		<ul>
+			<li>
+				<i>Loading...</i>
+			</li>
+			<li>
+				<svg height="128" width="128">
+					<circle cx="64" cy="64" r="40" />
+				</svg>
+			</li>
+		</ul>
+	</section>
+
+	<script>
+		var body = document.querySelector('body');
+		var menu = document.querySelectorAll('nav > ul > li');
+		var hasSub = document.querySelectorAll('[data-menu="has-sub"]');
+
+		window.addEventListener('keydown', function(e) {
+			if (e.keyCode === 9 || e.keyCode === 13 || e.keyCode === 32 || e.keyCode === 37 || e.keyCode === 38 || e.keyCode === 39 || e.keyCode === 40) {
+				if (!body.classList.contains('focus-outline')) {
+					body.classList.add('focus-outline');
+				}
+			}
+		});
+
+		window.addEventListener('mousedown', function() {
+			body.classList.remove('focus-outline');
+
+			if (location.hash.indexOf("img") != -1) {
+				window.history.back();
+			}
+		});
+
+		menu.forEach(function(label) {
+			var anchor = label.querySelector('a');
+
+			anchor.addEventListener('focus', function() {
+
+				if (anchor.getAttribute("data-menu") == "has-sub") {
+
+					label.classList.add('open-menu');
+				} else {
+					hasSub.forEach(function(subMenu) {
+						subMenu.classList.remove('open-menu');
+					});
+					console.log('NO')
+				}
+			});
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,529 @@
+/*
+	Search for 'NOTE' to read my comments.
+*/
+
+@charset "UTF-8";
+
+@font-face {
+	font-family: Ampersand;
+	src: url("../fonts/playfair-display-sc.woff2");
+	unicode-range: U+26;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.clear, #login form [type="checkbox"] ~ label::after, #login form a::after, #media-item article::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+body {
+	max-width: 100vw;
+	overflow-x: hidden;
+	padding: 1rem;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	color: #222222;
+}
+	@media (min-width: 40rem) {
+		body {
+			padding: 4rem;
+			padding-left: calc(100vw / 6);
+		}
+	}
+	@media (min-width: 100rem) {
+		body {
+			display: grid;
+			grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+			padding: 4rem;
+		}
+	}
+	body > h1 {
+		font-size: 3em;
+	}
+		@media (min-width: 40rem) {
+			body > h1 {
+				font-size: 4em;
+			}
+		}
+	body > section {
+		width: 95%;
+		max-width: 40rem;
+		margin: 0 auto;
+		margin-bottom: 1rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid #666666;
+	}
+		body > section:last-of-type {
+			border-bottom: none;
+		}
+		@media (min-width: 40rem) {
+			body > section {
+				margin: 0;
+				margin-bottom: 2rem;
+				padding-bottom: 2rem;
+			}
+		}
+
+h1, h2, h3, legend {
+	font-family: Ampersand, 'Oswald', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #33ccaa;
+}
+
+h1 {
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+	h1 a {
+		position: relative;
+		text-decoration: underline;
+	}
+		@media (min-width: 40rem) {
+			h1 a::before {
+				position: absolute;
+				top: .75rem;
+				left: -2rem;
+				content: "🔗";
+				font-size: .5em;
+				color: #666666;
+			}
+		}
+
+a {
+	color: #33ccaa;
+	text-decoration: none;
+}
+
+form label {
+	display: block;
+	margin-bottom: .5rem;
+	color: #222222;
+}
+
+form input {
+	display: block;
+	margin-bottom: 1rem;
+	padding: .5rem;
+	border-radius: 0;
+	border: 1px solid #666666;
+}
+
+form button {
+	position: relative;
+	z-index: 1;
+	color: #f2f2f2;
+	padding: .75rem 1rem;
+	font-size: 1.2rem;
+	cursor: pointer;
+	border: none;
+	background-color: #33ccaa;
+}
+	form button::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 100%;
+		bottom: 0;
+		z-index: -1;
+		content: "";
+		background-color: #1f7a66;
+		transition: .1s ease;
+	}
+	form button:hover::before {
+		right: 0;
+	}
+	@media (min-width: 40rem) {
+		form button {
+			padding: .5rem .75rem;
+			font-size: 1rem;
+		}
+	}
+
+figure {
+	margin-bottom: 1rem;
+}
+	figure img {
+		position: relative;
+		left: 50%;
+		max-width: 100%;
+		max-height: 25rem;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+	figure ~ figcaption footer {
+		margin-top: 1rem;
+		font-style: italic;
+	}
+
+fieldset {
+	border: none;
+}
+	fieldset legend {
+		font-size: 2em;
+		margin-bottom: 1em;
+	}
+
+#login form [type="checkbox"] {
+	float: left;
+	margin-right: .5rem;
+}
+
+#login form a {
+	font-size: 1rem;
+}
+	#login form a::after {
+		margin-bottom: 1rem;
+	}
+
+#navigation nav > ul {
+	position: relative;
+	display: flex;
+	margin-bottom: 4rem;
+	border-bottom: 1px solid #e6e6e6;
+}
+	#navigation nav > ul li {
+		position: relative;
+		margin-right: 1rem;
+		list-style-type: none;
+	}
+		@media (min-width: 40rem) {
+			/*
+				NOTE
+
+				CSS4 - :has() pseudo-class selector, has not been added to chrome yet (?).
+				Would've used that otherwise.
+			*/
+			#navigation nav > ul li:nth-of-type(2):hover li {
+				opacity: 1;
+				-webkit-transform: translateY(0);
+				-ms-transform: translateY(0);
+				transform: translateY(0);
+				transition: .3s ease;
+			}
+				#navigation nav > ul li:nth-of-type(2):hover li:nth-of-type(1) {
+					transition-delay: 0.1s;
+				}
+				#navigation nav > ul li:nth-of-type(2):hover li:nth-of-type(2) {
+					transition-delay: 0.2s;
+				}
+				#navigation nav > ul li:nth-of-type(2):hover li:nth-of-type(3) {
+					transition-delay: 0.3s;
+				}
+			}
+		#navigation nav > ul li:last-of-type {
+			margin-right: 0;
+		}
+		#navigation nav > ul li [aria-label*="current page"] {
+			border-bottom: 0.1rem solid #33ccaa;
+		}
+		#navigation nav > ul li ul {
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			margin-top: .25rem;
+		}
+			@media (min-width: 40rem) {
+				#navigation nav > ul li ul li {
+					opacity: 0;
+					-webkit-transform: translateY(-4em);
+					-ms-transform: translateY(-4em);
+					transform: translateY(-4em);
+					transition: .25s ease;
+				}
+			}
+
+/*
+	NOTE
+
+	Added anchors and ID's in the HTML in order to make the modal work with target.
+*/
+#picture-with-subtitle [id^="img"] {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease;
+}
+	#picture-with-subtitle [id^="img"]::before {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100vw;
+		height: 100vh;
+		content: "";
+		cursor: zoom-out;
+		opacity: 0;
+		pointer-events: none;
+		background-color: #222222;
+	}
+	#picture-with-subtitle [id^="img"]:target::before {
+		pointer-events: all;
+		transition: opacity 1s ease;
+	}
+	#picture-with-subtitle [id^="img"]:target img {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		max-width: 85vw;
+		max-height: 85vh;
+		box-shadow: 0 0 0 50vmax rgba(0, 0, 0, 0.5);
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+
+#media-item article img {
+	float: left;
+	width: 100%;
+	margin-right: 1.5rem;
+	margin-bottom: 1rem;
+}
+	@media (min-width: 40rem) {
+		#media-item article img {
+			width: 30%;
+			margin-bottom: 0;
+		}
+	}
+
+#media-item article p {
+	float: left;
+	width: 100%;
+}
+	@media (min-width: 40rem) {
+		#media-item article p {
+			width: calc(70% - 1.5rem);
+		}
+	}
+
+#chat > * {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1rem;
+	border: 1px solid #666666;
+}
+	@media (min-width: 40rem) {
+		#chat > * {
+			width: 80%;
+		}
+	}
+
+#chat ol {
+	float: left;
+	border-bottom: 0;
+}
+	#chat ol li {
+		display: block;
+		position: relative;
+		min-width: 45%;
+		max-width: 70%;
+		margin-bottom: 1rem;
+		padding: 1em;
+		list-style-type: none;
+	}
+		#chat ol li::before {
+			position: absolute;
+			bottom: 0;
+			width: 1rem;
+			height: 1rem;
+			content: "";
+		}
+		/*
+			NOTE
+
+			I did not change the HTML. Would otherwise use a 'data-type' attribute on the chat <li>'s.
+		*/
+		#chat ol li:nth-child(odd) {
+			float: right;
+			margin-right: 1rem;
+			border-radius: .5rem .5rem 0 .5rem;
+			background-color: #33ccaa;
+		}
+			#chat ol li:nth-child(odd)::before {
+				right: -.4rem;
+				border-radius: 0 0 .5rem 0;
+				background-color: #33ccaa;
+				-webkit-transform: skewX(40deg);
+				-ms-transform: skewX(40deg);
+				transform: skewX(40deg);
+			}
+			#chat ol li:nth-child(odd) [data-status] {
+				font-style: italic;
+			}
+				#chat ol li:nth-child(odd) [data-status]::after {
+					position: absolute;
+					bottom: .25rem;
+					right: .65rem;
+					content: "✓";
+					font-style: normal;
+				}
+			/*
+				NOTE
+
+				CSS4 - Case-insensitive attributes, has not been added to chrome yet (?).
+			*/
+			#chat ol li:nth-child(odd) [data-status="READ"]::after {
+				color: #f2f2f2;
+				text-shadow: -0.5rem 0 0 #f2f2f2;
+			}
+		#chat ol li:nth-child(even) {
+			float: left;
+			margin-left: 1rem;
+			border-radius: .5rem .5rem .5rem 0;
+			background-color: #e6e6e6;
+		}
+			#chat ol li:nth-child(even)::before {
+				left: -.4rem;
+				border-radius: 0 0 0 .5rem;
+				background-color: #e6e6e6;
+				-webkit-transform: skewX(-40deg);
+				-ms-transform: skewX(-40deg);
+				transform: skewX(-40deg);
+			}
+		#chat ol li footer {
+			margin-top: .5rem;
+			padding-top: .5rem;
+			font-size: .8em;
+			border-top: 1px solid rgba(0, 0, 0, 0.1);
+		}
+
+#chat form {
+	display: flex;
+	flex-wrap: wrap;
+}
+	#chat form label {
+		width: 100%;
+	}
+		#chat form label::after {
+			content: ":";
+		}
+	#chat form textarea {
+		box-sizing: border-box;
+		width: 100%;
+		resize: vertical;
+		padding: 1em;
+		font-family: 'Noto Sans', sans-serif;
+		border: 1px solid #666666;
+	}
+		@media (min-width: 40rem) {
+			#chat form textarea {
+				width: 80%;
+			}
+		}
+	#chat form button {
+		width: 100%;
+		border: none;
+	}
+		@media (min-width: 40rem) {
+			#chat form button {
+				width: 20%;
+				border: 1px solid #666666;
+				border-left: none;
+			}
+		}
+
+#step-indicator progress {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+	#step-indicator progress::-webkit-progress-bar {
+		background-color: #e6e6e6;
+	}
+	#step-indicator progress::-webkit-progress-value {
+		background-color: #33ccaa;
+	}
+
+#step-indicator ol {
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+	@media (min-width: 40rem) {
+		#step-indicator ol {
+			padding: 0 1rem;
+		}
+	}
+	#step-indicator ol li {
+		font-size: .8em;
+	}
+		@media (min-width: 40rem) {
+			#step-indicator ol li {
+				width: 30%;
+			}
+		}
+
+#rating fieldset label {
+	display: block;
+	float: left;
+	width: 3em;
+	cursor: pointer;
+	text-align: center;
+}
+	#rating fieldset label svg {
+		margin-top: .5rem;
+	}
+	#rating fieldset label + input {
+		position: relative;
+		z-index: -1;
+		outline: none;
+		-webkit-transform: translate(-2.2em, 3.6em);
+		-ms-transform: translate(-2.2em, 3.6em);
+		transform: translate(-2.2em, 3.6em);
+	}
+		#rating fieldset label + input::after {
+			display: block;
+			width: 3em;
+			height: 3em;
+			content: "";
+			border-radius: 50%;
+			-webkit-transform: translate(-1.1em, -1.1em);
+			-ms-transform: translate(-1.1em, -1.1em);
+			transform: translate(-1.1em, -1.1em);
+		}
+		#rating fieldset label + input:checked::after {
+			box-shadow: 0 0 1rem 0.25rem #33ccaa;
+		}
+
+#rating fieldset input {
+	float: left;
+	margin-right: .4rem;
+}
+
+#tests ul {
+	display: flex;
+}
+	#tests ul li {
+		margin-right: 1rem;
+		margin-bottom: 1rem;
+		padding: 1rem;
+		list-style-type: none;
+	}
+		#tests ul li:last-of-type {
+			margin-right: 0;
+		}
+
+	/*
+		NOTE
+
+		Checks how many children a parent has.
+		Source: Rik and Vasilis' CSSTTR presentation (Thursday 9th of february).
+	*/
+	#tests ul > *:first-child:nth-last-child(1),
+	#tests ul > *:first-child:nth-last-child(1) ~ * {
+		background-color: #99e6d5;
+	}
+	#tests ul > *:first-child:nth-last-child(2),
+	#tests ul > *:first-child:nth-last-child(2) ~ * {
+		background-color: #66d9bf;
+	}
+	#tests ul > *:first-child:nth-last-child(3),
+	#tests ul > *:first-child:nth-last-child(3) ~ * {
+		background-color: #33ccaa;
+	}
