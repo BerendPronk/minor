@@ -147,7 +147,7 @@
 		})
 		.check()
 
-	Router.navigate('/intro');
+	Router.navigate('https://berendpronk.github.io/minor/wafs/files/week-2/assignment-2/intro');
 	Router.show('intro');
 
 	// shows which anchor is currently active
