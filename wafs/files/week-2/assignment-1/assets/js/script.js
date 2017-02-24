@@ -41,7 +41,7 @@
 		aja()
 			// switch to using normal gif-images
 			// .url('http://api.giphy.com/v1/gifs/search?q=' + query + '&api_key=dc6zaTOxFJmzC')
-			.url('http://api.giphy.com/v1/stickers/search?q=' + query + '&api_key=dc6zaTOxFJmzC')
+			.url('https://api.giphy.com/v1/stickers/search?q=' + query + '&api_key=dc6zaTOxFJmzC')
 			.on('success', function(dataSet) {
 
 				var dataArr = dataSet.data;

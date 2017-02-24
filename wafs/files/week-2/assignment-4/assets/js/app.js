@@ -91,7 +91,7 @@
 			// Sends 'POST' request to the Paralleldots keyword API
 			request.trigger({
 				type: 'POST',
-				url:  'http://apis.paralleldots.com/keywords?q=' + dom.input.value + '&apikey=pIklELbRNqSO5ZUZCp8LclScsAaRw3dcKCp67xRsnJI'
+				url:  'https://apis.paralleldots.com/keywords?q=' + dom.input.value + '&apikey=pIklELbRNqSO5ZUZCp8LclScsAaRw3dcKCp67xRsnJI'
 			})
 				.then(function(rawKeywords) {
 					// Creates DOM-elements for to be added story
@@ -206,7 +206,7 @@
 					// Sends 'GET' request to the Giphy API
 					request.trigger({
 						type: 'GET',
-						url:  'http://api.giphy.com/v1/gifs/search?q=' + word + '&api_key=dc6zaTOxFJmzC'
+						url:  'https://api.giphy.com/v1/gifs/search?q=' + word + '&api_key=dc6zaTOxFJmzC'
 					})
 						.then(function(rawGiphy) {
 							var data = story.init(rawGiphy);
@@ -313,7 +313,7 @@
 									// Sends 'GET' request to Gihpy API for each synonym
 									request.trigger({
 										type: 'GET',
-										url:  'http://api.giphy.com/v1/gifs/search?q=' + tag + '&api_key=dc6zaTOxFJmzC'
+										url:  'https://api.giphy.com/v1/gifs/search?q=' + tag + '&api_key=dc6zaTOxFJmzC'
 									})
 										.then(function(rawGiphy) {
 											var data = story.init(rawGiphy);
@@ -390,9 +390,7 @@
 			},
 			{
 				template: 'detail',
-				title: 'Found synonyms',
-				content: 'Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce pharetra convallis urna. Quisque ut nisi.',
-				image: 'http://placecage.com/c/550/440'
+				title: 'Found synonyms'
 			}
 		],
 		render: function(pagelist) {
