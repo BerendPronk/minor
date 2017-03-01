@@ -30,7 +30,7 @@ body {
 	margin: 0;
 	padding: 1em;
 	font-family: 'Noto Sans', sans-serif;
-	font-size: 16px;
+	font-size: 1em;
 	color: $color-black;
 	cursor: url('../img/cursor-default.png') 0 5, auto;
 	background: linear-gradient(90deg, #85e0cc 13px, transparent 0),
@@ -62,7 +62,7 @@ body {
 
 		&::before {
 			display: block;
-			margin-top: 2em;
+			margin-top: 1em;
 			padding: 1em;
 			font-size: .9em;
 			color: $color-white;
@@ -72,7 +72,7 @@ body {
 
 		*:focus {
 			outline-width: .2rem;
-			outline-offset: .5em;
+			outline-offset: .1em;
 			outline-color: $color-theme-negative;
 			outline-style: solid;
 			transition: .1s ease;
@@ -133,6 +133,10 @@ body {
 	}
 }
 
+article {
+	position: relative;
+}
+
 h1, h2, h3, legend {
 	font-family: Ampersand, 'Oswald', sans-serif;
 	font-weight: normal;
@@ -171,6 +175,7 @@ h1 {
 }
 
 p {
+	max-width: 35em;
 	margin: 0;
 
 	& + p {
@@ -429,21 +434,33 @@ form {
 }
 
 figure {
-	margin-bottom: 1rem;
+	margin: 0;
 
 	img {
 		position: relative;
 		left: 50%;
+		z-index: 1;
 		max-width: 100%;
 		max-height: 25rem;
 		transform: translateX(-50%);
 	}
 
-	& ~ figcaption {
+	& + figcaption {
+		box-sizing: content-box;
+		position: relative;
+		z-index: 2;
+		padding: 1em;
+		color: $color-white;
+		background-color: $color-theme;
 
 		footer {
 			margin-top: 1rem;
 			font-style: italic;
+
+			a {
+				color: $color-theme-negative;
+				display: block;
+			}
 		}
 	}
 }
@@ -549,9 +566,12 @@ legend {
 	figure {
 		display: flex;
 		justify-content: center;
+		background-color: darken($color-theme, 25%);
 	}
 
 	[id^="img"] {
+		display: flex;
+		align-items: flex-end;
 		z-index: 2;
 
 		&::before {
@@ -571,14 +591,22 @@ legend {
 		img {
 			position: static;
 			transform: translateX(0);
-			transition: .1s ease;
+			transition: .3s ease;
+
+			&::after {
+				content: "";
+			}
 
 			&:hover {
-				transform: translateX(0) scale(1.05);
+				transform-origin: bottom;
+				transform: perspective(52.5em) rotateX(-45deg);
+				box-shadow: 0 1rem 1rem rgba(0, 0, 0, .5);
 			}
 		}
 
 		&:target {
+			position: relative;
+			z-index: 3;
 
 			&::before {
 				pointer-events: all;
@@ -601,16 +629,67 @@ legend {
 #media-item {
 
 	article {
-		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
 
-		&::after {
-			@extend .clear;
+		&:not(:first-of-type) {
+			flex-wrap: no-wrap;
+			margin-top: 2rem;
+			padding-top: 2rem;
+			border-top: 1px solid $color-grey;
+
+			h1 {
+				order: 1;
+				font-size: 1.2rem;
+
+				@media (min-width: 40em) {
+					width: 60%;
+				}
+
+				&::after {
+					display: block;
+					margin-top: .5em;
+					padding: .5em;
+					font-size: 1rem;
+					color: $color-white;
+					pointer-events: none;
+					content: "Read more";
+					background-color: $color-theme;
+
+					@media (min-width: 40em) {
+						position: absolute;
+						bottom: 0;
+						margin-top: 0;
+					}
+				}
+
+				a {
+					text-decoration: none;
+
+					&::before {
+						display: none;
+					}
+				}
+			}
+
+			img {
+				order: -1;
+				max-width: max-content;
+			}
+
+			p {
+				display: none;
+			}
+		}
+
+		h1 {
+			margin-top: 0;
 		}
 
 		img {
-			float: left;
-			width: 100%;
 			width: max-content;
+			height: max-content;
 			margin-right: 1.5rem;
 			margin-bottom: 1rem;
 
@@ -626,9 +705,11 @@ legend {
 			width: 100%;
 
 			@media (min-width: 40em) {
-				width: calc(70% - 1.5rem);
+				width: calc(60% - 1.5rem);
 			}
 		}
+
+
 	}
 }
 
@@ -754,10 +835,19 @@ legend {
 			width: 100%;
 			border: none;
 
+			&::after {
+				top: 0;
+			}
+
 			@media (min-width: 40em) {
 				width: 20%;
 				border: 1px solid $color-grey;
 				border-left: none;
+
+				&::after {
+					top: -1em;
+					left: 0;
+				}
 			}
 		}
 	}
@@ -791,12 +881,31 @@ legend {
 	}
 
 	li {
+		position: relative;
 		font-size: .8em;
 		color: $color-grey;
 
 		@media (min-width: 40em) {
 			font-size: 1em;
 			width: 30%;
+		}
+
+		&::after {
+			position: absolute;
+			top: 50%;
+			right: 1.5em;
+			margin-left: .5rem;
+			font-size: 1em;
+			color: lighten($color-grey, 10%);
+			content: "→";
+			transform: translateY(-50%);
+		}
+
+		&:last-of-type {
+
+			&::after {
+				display: none;
+			}
 		}
 
 		a {
@@ -834,7 +943,7 @@ legend {
 		text-align: center;
 
 		@media (min-width: 40em) {
-			width: 4.5em;
+			width: 4.25em;
 			margin-right: 1rem;
 		}
 
