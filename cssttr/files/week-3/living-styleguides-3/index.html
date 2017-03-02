@@ -291,9 +291,9 @@
 		var menu = document.querySelectorAll('nav > ul > li');
 		var hasSub = document.querySelectorAll('[data-menu="has-sub"]');
 
-		// setTimeout(function() {
+		setTimeout(function() {
 			loading.classList.add('hidden');
-		// }, 2500);
+		}, 2500);
 
 		window.addEventListener('hashchange', function() {
 			hasSub[0].classList.remove('open-menu');
