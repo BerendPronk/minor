@@ -138,7 +138,7 @@ var stiphy = (function() {
 			// Sends 'POST' request to the Paralleldots keyword API
 			story.request({
 				type: 'POST',
-				url:  'http://apis.paralleldots.com/keywords?q=' + dom.input.value + '&apikey=pIklELbRNqSO5ZUZCp8LclScsAaRw3dcKCp67xRsnJI'
+				url:  'https://apis.paralleldots.com/keywords?q=' + dom.input.value + '&apikey=pIklELbRNqSO5ZUZCp8LclScsAaRw3dcKCp67xRsnJI'
 			})
 				.then(function(rawKeywords) {
 					// Creates DOM-elements for to be added story
@@ -254,7 +254,7 @@ var stiphy = (function() {
 					// Sends 'GET' request to the Giphy API
 					story.request({
 						type: 'GET',
-						url:  'http://api.giphy.com/v1/gifs/search?q=' + word + '&api_key=dc6zaTOxFJmzC'
+						url:  'https://api.giphy.com/v1/gifs/search?q=' + word + '&api_key=dc6zaTOxFJmzC'
 					})
 						.then(function(rawGiphy) {
 							var data = story.parse(rawGiphy);
@@ -474,7 +474,7 @@ var stiphy = (function() {
 									// Sends 'GET' request to Gihpy API for each synonym
 									story.request({
 										type: 'GET',
-										url:  'http://api.giphy.com/v1/gifs/search?q=' + tag + '&api_key=dc6zaTOxFJmzC'
+										url:  'https://api.giphy.com/v1/gifs/search?q=' + tag + '&api_key=dc6zaTOxFJmzC'
 									})
 										.then(function(rawGiphy) {
 											var data = story.parse(rawGiphy);
