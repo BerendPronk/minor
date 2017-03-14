@@ -1,4 +1,4 @@
-##February 7th, 2017 - Stephen Hay
+## February 7th, 2017 - Stephen Hay
 
 The user experience consultant Stephen Hay was invited to speak to us about his expertise. Design, that is. More specifically; design for the web. Also author of a book about this topic, called: 'Responsive Design Workflow'.
 
@@ -14,7 +14,7 @@ Stephen ended his talk by answering some quick-questions, besides the 'bigger' q
 
 ---
 
-##February 14th, 2017 - Justus Sturkenboom
+## February 14th, 2017 - Justus Sturkenboom
 
 One of the lecturers of the University of Applied sciences, and my coach of the year prior to this minor, Justus Sturkenboom wanted to give us multiple tips about the benefits of sketchnoting. Not only that; he tackled the tools necessary for sketching notes of great quality.
 
@@ -36,7 +36,7 @@ Justus can talk very fast. He proved that once again by finishing his presenatio
 
 ---
 
-##February 28th, 2017 - Peter Paul Koch
+## February 28th, 2017 - Peter Paul Koch
 
 The initial speaker of this Weekly Nerd was unable to give a presentation, so we received more of an improvised talk by someone else, instead.
 The name of the speaker was Peter Paul Koch, a front-end developer and founder of Fronteers.
@@ -58,3 +58,18 @@ All of the flaws Peter talked about enhance eachother, like a chain consisting o
 
 After about on hour he gave us the opportunity to ask him some questions about the talk and his expertise. Overall it was a very impressive presentation which was accurate in terms of information to our minor.
 
+---
+
+## March 14th, 2017 - Titus Wormer
+
+After a few weeks of playing around in with GitHub during the first semester of our minor, we received a lecture about the software itself.
+
+Titus began his talk by showing a short video explaining the concept of Git, and upstreams in general. It featured a lot of metaphors, for us to get a good grip of the subject. The video was about the cookie recipe of some fictional grandma, and how family members were able to improve on it by creating branches on the recipes. Here they added their own ideas into the mix, following by a pull-request towards grandma.
+If grandma were to like the addition, she would merge the idea into her own. If not, the newly created recipe would play a role in it's own fork of the recipe.
+
+After the metaphorical cookie-part of the presentation, Titus discussed some basic history of Git, and how the principle of Open Source software came to be.
+Anyone who came up with a good question would be rewarded with a fortune cookie, he said. He had some spare, since he recently bought two kilos of the stuff.
+
+The final part of the presentation included a demonstration of using Git via the terminal. This is where the most questions emerged. That's understandable, since it was all text-based.
+Titus didn't really have an example to show us. He decided to create a new repository to pull some files from, adjusting them and pushing them eventually.
+During this session, he also briefly explained the more advanced principles like squashing and rebasing commits.
