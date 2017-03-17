@@ -1,3 +1,5 @@
+# Minor: Web Development - Weekly Nerd Blog
+
 ## February 7th, 2017 - Stephen Hay
 
 The user experience consultant Stephen Hay was invited to speak to us about his expertise. Design, that is. More specifically; design for the web. Also author of a book about this topic, called: 'Responsive Design Workflow'.
