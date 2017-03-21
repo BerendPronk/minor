@@ -75,3 +75,19 @@ Anyone who came up with a good question would be rewarded with a fortune cookie,
 The final part of the presentation included a demonstration of using Git via the terminal. This is where the most questions emerged. That's understandable, since it was all text-based.
 Titus didn't really have an example to show us. He decided to create a new repository to pull some files from, adjusting them and pushing them eventually.
 During this session, he also briefly explained the more advanced principles like squashing and rebasing commits.
+
+## March 21st - Jasper Moelker
+
+The fourth Weekly Nerd was given by a front-end developer from De Voorhoede, Jasper Moelker, at the office he works in.
+The topic of this presentation was Progressive Enhancement. A very broad topic, with key components to keep in mind when developing a website for the end-user. 
+
+Jasper set the term 'Progressive Enhancement' against 'Graceful Degradation'. They basically are the same thing, but viewed from a different perspective. Progressive Enhancement ia about adding new features to improve on the user experience, but keeping the overal code readible to as many browsers as possible.
+Graceful degredation is the same concept, but as viewed from the other side; removing new features without removing the way users experience the website/application.
+
+To accomplish this, a developer needs to build layered experiences. Starting with a baseline, a developer should always make the application work with the functionalities built in with most systems. Only then can the developer focus on more 'acceptable' implementations, building extra efficiency on top of the baseline experience, with newer features that may not be supported on every system.
+After that, the 'enjoyable' layer can be developed, putting a smile on the user's face.
+
+Feature detection if a very important aspect of progressive enhancement, Jasper mentioned. Without it, the parser of an older browser might come across a functionality it does not fully understand, potentially breaking the entire application.
+
+To put us to the test with the new knowledge we obtained, Jasper let us create a pattern primer, which is basically a detailed map of a pattern or feature. This primer needed to contain the explanation of our chosen pattern, along with an interaction flow and possible browser functionalities to improve on the concept of the pattern.
+After about half an hour, Jasper collected everyone's sheet and we discussed them as a group.
