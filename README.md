@@ -76,6 +76,8 @@ The final part of the presentation included a demonstration of using Git via the
 Titus didn't really have an example to show us. He decided to create a new repository to pull some files from, adjusting them and pushing them eventually.
 During this session, he also briefly explained the more advanced principles like squashing and rebasing commits.
 
+---
+
 ## March 21st - Jasper Moelker
 
 The fourth Weekly Nerd was given by a front-end developer from De Voorhoede, Jasper Moelker, at the office he works in.
