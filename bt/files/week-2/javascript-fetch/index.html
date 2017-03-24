@@ -13,6 +13,7 @@
 			height: 100vh;
 			margin: 0;
 			padding: 10em;
+			font-family: sans-serif;
 			background: #ffd65e;
 			background: -moz-linear-gradient(-45deg, #ffd65e 0%, #febf04 100%);
 			background: -webkit-linear-gradient(-45deg, #ffd65e 0%, #febf04 100%);
@@ -27,7 +28,6 @@
 		}
 		h1 {
 			margin-bottom: 1em;
-			font-family: sans-serif;
 			font-size: 2em;
 			color: #333;
 		}
@@ -71,7 +71,7 @@
 		var noSupport = document.getElementById('no-support');
 
 		if (window.fetch) {
-			fetch('http://api.giphy.com/v1/stickers/search?q=' + getBrowser() + '&api_key=dc6zaTOxFJmzC')
+			fetch('https://api.giphy.com/v1/stickers/search?q=' + getBrowser() + '&api_key=dc6zaTOxFJmzC')
 				.then(function(response) {
 					if (response.status !== 200) {
 						console.error('There was an error trying to collect data', reponse.status);
@@ -112,7 +112,7 @@
 					noSupport.style.display = 'none';
 				}
 			};
-			req.open('GET', 'http://api.giphy.com/v1/stickers/search?q=' + getBrowser() + '&api_key=dc6zaTOxFJmzC', true);
+			req.open('GET', 'https://api.giphy.com/v1/stickers/search?q=' + getBrowser() + '&api_key=dc6zaTOxFJmzC', true);
 			req.send();
 		}
 
