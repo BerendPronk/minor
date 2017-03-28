@@ -100,7 +100,7 @@ After about half an hour, Jasper collected everyone's sheet and we discussed the
 
 The announcement of this talk was made at the start of the minor, and it sure was something to look forward to. Bram is a blind developer who is specialized in accessibility. He arrived accompabied by his guidance dog, which was able to sit quietly in the same spot for the entire presentation.
 
-Bram began by showing the peripherals he needs in order to surf on, and develop for the web, consisting of a special keyboard for him to read with his fingers, and a screen reader.
-By navigating to a few major websites, he demonstrated these tools with their practical use. In between these demonstrations, Bram mentioned WCAG and the importance of general accessibility on the web. We were already taught multiple times about the importance of this, but it was very good to hear it from someone who experiences annoyances related to this topic on a daily basis.
+Bram began by showing the peripherals he needs in order to surf on, and develop for the web; consisting of a special keyboard for him to read with his fingers, and a screen reader.
+By navigating to a few major websites, he demonstrated these tools with their practical use. In between these demonstrations, Bram mentioned WCAG and the importance of accessibility on the web in general. We were already taught multiple times in the past about the importance of this, but it was very good to hear it from someone who experiences annoyances related to this topic on a daily basis.
 
-After his demonstrations we had the opportunity to ask Bram questions. He answered them really well, and taught us a lot more about accessability then qe initially knew after his talk.
+After his demonstrations, we had the opportunity to ask him some questions. He answered them really well, and taught us a lot more about accessability then we initially knew before his talk.
