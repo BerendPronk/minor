@@ -104,3 +104,24 @@ Bram began by showing the peripherals he needs in order to surf on, and develop 
 By navigating to a few major websites, he demonstrated these tools with their practical use. In between these demonstrations, Bram mentioned WCAG and the importance of accessibility on the web in general. We were already taught multiple times in the past about the importance of this, but it was very good to hear it from someone who experiences annoyances related to this topic on a daily basis.
 
 After his demonstrations, we had the opportunity to ask him some questions. He answered them really well, and taught us a lot more about accessability then we initially knew before his talk.
+
+---
+
+## April 11th - Niels Leenheer
+
+It was that time again; time to listen to another installment of the Weekly Nerd presentations, while we all just started a new semester. We received a new set of courses to practise: Real-time Web and Web of Things. Both of which are about letting multiple devices communicate with  each other.
+
+The speaker that came to taught us something was Niels Leenheer. He is an expert on the internet of things spectrum. He also is founder of [HTML5Test](http://www.html5test.com) and created [Salonhub](http://www.salonhub.nl).
+
+With little introduction to the concept of the internet of things, Niels directly dove into the more technical details: What is necessary to set up a IoT-environment, how to set it up and what it could be used for in general.
+
+One of the techniques Niels used for his projects, is called 'KlikAan-KlikUit' (SwitchOn-SwitchOff), a rather simple, not exciting way of dealing with IoT-development. It works with the transmission of data via a 433MHz-frequency channel, which allows the connected devices to communicate.
+Another interesting technology within IoT, is called zWave. This enables the ability to create a mesh network that spans across multiple devices. This network is capable of achieving a greater reach than an ordinary Wi-Fi network. Every connected device will be a network hotspot, basically creating a chain of devices that depend on each other.
+
+Niels also showed us some very interesting examples of IoT-projects he created himself.
+He made a mailbox that lets him know when he receives mail, and created an add-on for his washing machine that lets him know his clothing is done when the Watt-usage recedes 5 Watt.
+Niels is getting notified from these installations by, what I think is his most valueable creation, a Pixel notification  center, which is also capable of rendering monsters in real-time via an app.
+
+Security of IoT-technologies are not the safest. Everyone that knows something about your setup, is able to manipulate the IoT-traffic, if not done properly.
+
+A relatively short presentation, though very inspirational and packed with new terms, technologies and ideas.
