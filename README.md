@@ -125,3 +125,26 @@ Niels is getting notified from these installations by, what I think is his most 
 Security of IoT-technologies are not the safest. Everyone that knows something about your setup, is able to manipulate the IoT-traffic, if not done properly.
 
 A relatively short presentation, though very inspirational and packed with new terms, technologies and ideas.
+
+---
+
+## April .. - Peter Peerdeman
+
+to be continued
+
+---
+
+## May 3rd - Eva-Lotta Lamm
+
+Quite some time has passed since the latest Weekly Nerd. The presentation was not given in one of our available classrooms, but in the CMD-Medialounge, instead. Also, the talk was organized via Eventbrite and presented as an ICONS-meeting, so other students of the university could join.
+
+The speaker of the event was Eva-Lotta Lamm, who is an expert in making sketchnotes.
+There was a sign-language interpreter in front of the audience to translate everything that the speaker would say to a girl in the front row, who had lost her ability to hear.
+
+After a short introduction of the previous experiences Eva-Lotta has faced in her career, she listed five essential guidelines for sketchnoting. This was done in a very clever way, where she projected a live video-feed of her actually sketching the guidelines with the techniques she wanted to teach us about. The feed was recorded, as well; so students that weren't able to join this event could rewatch it at a later date.
+
+Almost everyone in the room sketched along with Eva-Lotta. It really was a nice way of following the presentation. Because she wasn't able to speak to fast and no one was distracted amd kept their attention on the beautiful drawinga she made.
+
+The topic of this talk was similar to a previous Weekly Nerd, the one where Justus Sturkenboom shared his experiences with sketchnoting. Though a similar subject, both talks tackled different problems when it comes to sketchnoting. Where Justus focused more on the gear you should have, Eva-Lotta told us more on the different techniques people should implement in the sketches.
+
+While not being a presentation specifically meant for our minor, the talk Eva gave will be of great influence for all of the future events we visit.
