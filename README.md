@@ -128,9 +128,18 @@ A relatively short presentation, though very inspirational and packed with new t
 
 ---
 
-## April .. - Peter Peerdeman
+## April 21 - Peter Peerdeman
 
-to be continued
+This Weekly Nerd was held on the week's friday, because the attending developer, Peter Peerdeman, was unable to show up on tuesday. We already knew who Peter was, as he coached our group during the second project week of the minor; the project where we built a prototype application / feature for either one of Lifely's products: Freshheroes or Part-up.
+
+At Lifely Peter does a lot of the MeteorJS framework. He showed off their expertise with this particular framework by navigating to a dashboard within an intranet, meant for companies of all kinds. This dashboard featured a real-time network between all connected users, making interactions like chatting possible.
+The intranet was served from Lifely's own server, without connections to social media platforms like Facebook or WhatsApp. Only so did they make it possible to obtain full privacy for all of their users.
+
+After the introduction to the capabilities of Meteor, Peter moved to the topic of scalability. More specifically: Loadbalancing. This is a term used to define the distribution of data traffic on a network. It's especially important on services that feature lots of real-time traffic. Loadbalancing requires session affinity, which translates to the 'memory' of the path the server took for each connected client. This process can be automated with hosted solutions like Meteor Galaxy. It's also possible to scale it yourself using Docker images.
+
+Peter promised to end his presentation with some commentary on GraphQL (Graph Query Language), a neat way to make requests to a server. This wasn't really necessary to remember, but was discussed mainly out of interest from both Peter and us, the group listening to his talk.
+It dit not take long before his explanation on this entangled itself, eventually coming to a point where the beamer showed more open application than a usual air traffic control post. Since it wasn't important to write down, we all sat down and just watched Peter trying to tackle a difficult topic.
+The presentation on itself was not enough to know anything crucial on the topic of GraphQL, but it sure is interesting to dive into at a later moment during the minor.
 
 ---
 
