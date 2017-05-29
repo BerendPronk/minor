@@ -157,3 +157,45 @@ Almost everyone in the room sketched along with Eva-Lotta. It really was a nice 
 The topic of this talk was similar to a previous Weekly Nerd, the one where Justus Sturkenboom shared his experiences with sketchnoting. Though a similar subject, both talks tackled different problems when it comes to sketchnoting. Where Justus focused more on the gear you should have, Eva-Lotta told us more on the different techniques people should implement in the sketches.
 
 While not being a presentation specifically meant for our minor, the talk Eva gave will be of great influence for all of the future events we visit.
+
+---
+
+## May 16th - Nick, Lifely
+The CEO of the already familiar Lifely came to visit us for a Q&A, as a stand-in for the speaker that was not able to attend our classroom.
+
+A short recap of his life as an entrepreneur was his way of introducing himself. He mentioned that he started being a businessman at age twelve, selling Pokèmon cards to people all over the world.  
+He's now busy with a lot of different projects, including one about the integration of refugees in our country. Nick told us the most about this project.
+
+Though we've all experienced Lifely as a full-stack developing company, Nick mentioned the main focus goes to the back-end development of applications.  
+I was surprised when he said that.
+
+Nick was curious to see if we had any questions for him. Yes, we has some; mainly on the subject of starting a company in the future. He was able to answer then all very nicely by summarizing a list on the topic of "How to be successful in business".  
+This list consisted of the following statements:
+- Do one thing at a time
+- Be unique and innovative
+- Make sure you have proof that you're able to sell your product
+- Learn from your mistakes
+
+A final question also was about success, more specifically, about success in projectmanagement. Nick answered it by telling how they handle it at Lifely, putting emphasis on working in short sprints and working towards the MVP.
+
+---
+
+## May 23rd - Guido Bouman
+The interaction engineer of nerdy company Q42, Guido, gave us a visit to talk about the work that the company does for their clients. Though they work for clients, Guido mentioned that the user of the final product is the most important factor they have in mind during development.
+
+Q42 consists of three locations, spread over the globe. The combined amount nerd at work on these locations, add up to 67.  
+The company makes beautful websites, web- and native applications, and IoT-solutions with JavaScript, Swift, Scala and C# code.
+
+One of the IoT-solutions Guido mentioned, was the web-connected coffee machine in their own office. He seemed very proud of it. I must give him that, since it seems to have been an awful lot of work, based on the explanation he provided us with.
+
+Guido started by telling the way they figured out how to access the boarded-chip of their coffee machine, by opening the logo plaque at the back. He showed us what was hidden behind this logo. To my surprise a serial port showed up, one that can be connected to a Raspberry Pi board via the UART pins.  
+The output the machine gave, was 'encrypted', though. However, by applying a DIFF on this output, the developers of Q42 figured out how to read what caffeinated beverage was requested.  
+This meant they were able to count the amount of coffee they've drank over time, and share it with the world.
+
+The idea of the to the internet connected coffeemaker was sold, and currently there is a company in the United States producing machines like the one inside the Q42 office.
+
+After that story, Guido briefly talked about a relatively new development within the Internet of Things category, the LoRa-chip: A small chip that's connected to a free-to-use global network. The chip can send all sorts of data read from an array of sensors.
+
+Later in the presentation, Guido switched topics to data stores, on how webservices are being deployed and regulated. He mentioned: Meteor + HTTP Publish, FireBase, Google Cloud PUB/SUB and Amazon Kenisis.
+
+There weren't any follow-up questions at the end of his presentation. Guido did receive some questions, in which he was asked to give more detail on parts of his presentation, like Firebase and the LoRa-chip.
