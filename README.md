@@ -144,7 +144,6 @@ The presentation on itself was not enough to know anything crucial on the topic 
 ---
 
 ## May 3rd - Eva-Lotta Lamm
-
 Quite some time has passed since the latest Weekly Nerd. The presentation was not given in one of our available classrooms, but in the CMD-Medialounge, instead. Also, the talk was organized via Eventbrite and presented as an ICONS-meeting, so other students of the university could join.
 
 The speaker of the event was Eva-Lotta Lamm, who is an expert in making sketchnotes.
@@ -181,7 +180,7 @@ A final question also was about success, more specifically, about success in pro
 ---
 
 ## May 23rd - Guido Bouman
-The interaction engineer of nerdy company Q42, Guido, gave us a visit to talk about the work that the company does for their clients. Though they work for clients, Guido mentioned that the user of the final product is the most important factor they have in mind during development.
+The interaction engineer of the nerdy company Q42, Guido, gave us a visit to talk about the work that the company does for their clients. Though they work for clients, Guido mentioned that the user of the final product is the most important factor they have in mind during development.
 
 Q42 consists of three locations, spread over the globe. The combined amount nerd at work on these locations, add up to 67.  
 The company makes beautful websites, web- and native applications, and IoT-solutions with JavaScript, Swift, Scala and C# code.
@@ -199,3 +198,29 @@ After that story, Guido briefly talked about a relatively new development within
 Later in the presentation, Guido switched topics to data stores, on how webservices are being deployed and regulated. He mentioned: Meteor + HTTP Publish, FireBase, Google Cloud PUB/SUB and Amazon Kenisis.
 
 There weren't any follow-up questions at the end of his presentation. Guido did receive some questions, in which he was asked to give more detail on parts of his presentation, like Firebase and the LoRa-chip.
+
+---
+
+## May 31st, Léonie Watson
+The second to last Weekly Nerd was another presentation at the ICONS event. This time with someone in the spotlight who came all the way from the United Kingdom. Léonie is a blind webdeveloper for quite some time now, basically since the web started existing back in 1993. She hasn't always been blind. During the start development career Léonie unfortunately lost her eyesight.
+Before starting with a actual presentation, she mentioned that she frequently gives talks like the one she was about to give us, for similar and much larger audiences.
+
+Léonie only had one topic for this meetup. She wanted to tell us all five things about screen readers; about misconceptions and just important facts to remember. Who is in need of a screen reader? Where and when do these people use a screen reader? And, more importantly, why do these people need to use a screen reader in the first place; aren't there any alternatives?
+
+Since Léonie is blind, her presentation looked very basic and straight to the point. A strong aspect of a poweful presentation, in my opinion. This also meant her presentation didn't feature more than just some unordered lists, which has it's downsides. Nevertheless we were all enthousiastic about how she was going to astonish us with the knowledge she wanted to share.
+
+It was immediately clear that not only the blind use screen readers. Partially sighted people and people with autism or dyslexia also are in need of a screen reader to use the web. But despite what a lot of people think, a screen reader is not always a piece of software to read websites out loud. Digital assistants, voice interfaces and the all familiar navigation system all use a screen reader for information input/output.  
+Besides screen readers, there are braille interpreter keyboards available, as well, but they can cost up to thousands of pounds, Léonie said.
+
+Then Léonie moved on to the 'Where' part of the things about screen readers. Screen readers can be used on any platform and operating system, which provide the blind with options. Some are free to use, while others can cost a few hundred pounds. The software of screen readers dives deep in the layers of what is about to be read, to enhance the pronunciation with emphasis when needed, or to just give some more feedback on the element the user's TAB-index is focussed on at that moment.  
+The lang attribute can help out here. It makes the screen reader use another voice for the specific language, so the speed and tone of voice will be adjusted correctly to the giving language.
+
+Unfortunately screen readers are not equal to browsers, meaning that not every new implementation will be built into the screen readers with new updates. This can be unfair to the blind users on the web, because they are unable to have the same experience as people who can see.
+
+Finally, Léonie gave a summary on why you should develop with accessibility in mind, and came with the following list:
+- It feels good
+- It's your responsibility as a developer
+- It's your choice. Decide wisely.
+- It doens't have to be perfect. Not a single website is, so jsut do your best to make it as accessible as you can.
+
+After her presentation was over, we has thirty minutes left to ask Léonie some questions about literally anything, though we all stayed at the topic of the presentation and accessibilit on the web in general.
