@@ -45,8 +45,7 @@ The name 'A11y' is short for saying 'Accessibility'. The number eleven stands fo
 - **Digestible.** They strive to feature short, digestible pieces of content.
 - **Up-to-date.** The project is hosted on Github so information can be current with the latest standards.
 - **Forgiving.** People make mistakes and web accessibility is hard, so they seek to be encouraging.
-
-*(The A11y Project, 2013)*
+*(The A11y Project, 2013).*
 
 If you are a developer, and want to know more about developing with accessibility in mind; do checkout the webseries of 'A11ycasts' made by Rob Dodson for Google Chrome. As of the time this article is being written, a set of 18 short videos have been uploaded to the A11ycasts series. They are easy to follow and are full of information about accessibility on the web.
 
