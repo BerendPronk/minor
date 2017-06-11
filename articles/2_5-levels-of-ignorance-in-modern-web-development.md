@@ -20,7 +20,7 @@ When a set of rules is applied (i.e. a maximum allowed width of paragraphs, or t
 *to add*
 
 ## Resources
-**Lea Verou. (2012). Contrast Ratio.**
+**Lea Verou. (2012). Contrast Ratio.**  
 *http://leaverou.github.io/contrast-ratio*
 
 **Peter Paul Koch. (2017). Choosing the web's future.**  
