@@ -20,7 +20,8 @@ Whether the developer called to focus on an object-oriented or a functional appr
 With the introduction of fiber networks and the new 4G mobile standard, one should expect that the overall speed is exponentially increased, and it is, though not everywhere. It's a common misconception that speedy internet is the norm around the globe, or even thirty minutes from my hometown; one that I personally fell for as well.  
 Fiber networks are not integrated fully, yet. As of 2016, only 11% of the total percentage of bandwidth subscriptions in the United States were from fiber networks (Felix Richter, 2016). With mobile devices, the same can be said: Not everyone has the opportunity to enjoy the speed that comes with a 4G network, some have browse with 3G or even 2G connections. Even some (public) Wi-Fi networks can perform poorly.
 
-*on 'keeping in mind when developing website/web apps to increase performance'*
+Every developer should keep performance in mind. It doesn't necessarily have to be the top priority at the kick-off, but it's nice to consider doing so anyway. Procrastinating on tasks like this mean the problems stack up while the project is getting bigger and bigger.  
+Really, a developer who's not paying attention to performance could result in a company's downfall, since the expected amount of customers can drop when people decide to close the website before it finished loading.
 
 ## Accessibility — Countless disabilities
 *to add*
