@@ -38,7 +38,7 @@ The W3C conducted special guidlines, called: The Web Content Accessibility Guide
 
 - **Principle 4:** Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
 
-A full list of the WCAG 2.0 guideline s can be found on the (W3C website)[https://www.w3.org/TR/WCAG/#guidelines].
+A full list of the WCAG 2.0 guidelines can be found on the [W3C website](https://www.w3.org/TR/WCAG/#guidelines).
 
 ## Progressive Enhancement — Not everyone runs the latest software 
 *to add*
