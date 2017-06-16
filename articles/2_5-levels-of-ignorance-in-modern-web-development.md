@@ -24,7 +24,21 @@ Every developer should keep performance in mind. It doesn't necessarily have to 
 Really, a developer who's not paying attention to performance could result in a company's downfall, since the expected amount of customers can drop when people decide to close the website before it finished loading.
 
 ## Accessibility — Countless disabilities
-*to add*
+Another major part of development, besides performance, is accessibility; to think about all the possible users a website/application will have. And I don't mean different genders or age groups, but the differences in the capabilities they have, or rather, what kind of disabilities they share. I can assure you it's a lot; too many, in fact, to name them all.
+
+Naming all disabilities is not important, though it is necessary to mention that all of the people who are unfortunate enough to deal with one, should be able to use the website/application as intended. This translates to blind users being able to listen to the content, images included, and users navigating with the TAB key to be able to reach nook and corner of the website/application.
+
+The W3C conducted special guidlines, called: The Web Content Accessibility Guidelines (WCAG), and the second installment of these guidelines were officially announced in december of 2008 (W3C, 2008). The main guidelines are as follows:
+
+- **Principle 1:** Perceivable - Information and user interface components must be presentable to users in ways they can perceive.
+
+- **Principle 2:** Operable - User interface components and navigation must be operable.
+
+- **Principle 3:** Understandable - Information and the operation of user interface must be understandable.
+
+- **Principle 4:** Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+
+A full list of the WCAG 2.0 guideline s can be found on the (W3C website)[https://www.w3.org/TR/WCAG/#guidelines].
 
 ## Progressive Enhancement — Not everyone runs the latest software 
 *to add*
@@ -38,3 +52,6 @@ Really, a developer who's not paying attention to performance could result in a 
 
 **Felix Richter. (2016). The U.S. Lags Behind in Fiber Adoption**  
 *https://www.statista.com/chart/4392/fiber-adoption-in-oecd-countries/*
+
+**W3C. (2008). W3C Web Standard Defines Accessibility for Next Generation Web**  
+*https://www.w3.org/2008/12/wcag20-pressrelease.html*
