@@ -41,7 +41,14 @@ The W3C conducted special guidlines, called: The Web Content Accessibility Guide
 A full list of the WCAG 2.0 guidelines can be found on the [W3C website](https://www.w3.org/TR/WCAG/#guidelines).
 
 ## Progressive Enhancement — Not everyone runs the latest software 
-*to add*
+With the disabled and impatient tackled, all user experience flaws a website/application can have should be solved, right? No, unfortunately there is another principle developers need to acknowledge: Users with outdated software, mainly webbrowsers. The innovations in web technology come and go as we speak, some of which are very nifty to be used in a developer's next project. But these new technologies are only supported by the newest browser versions, if one is lucky.  
+Browser developers continuously race against these innovations to keep up with the demand of the public and to stay ahead of their competition. Though it is good to see that they are innovating and are not falling behind, in contrast to the older browsers around.
+
+A lot of internet users put little to no effort in keeping their browsers up to date. Modern web browsers update automatically, but this wasn't the case with many of the mainstream browsers, like Internet Explorer, unfortunately. And because Microsoft, since the dawn of the web, has dominated the PC market, a lot of people have used their default web browser Internet Explorer.  
+It's good to see that the tables have turned, and that the majority of users upgraded to a automatic-updating browser like Chrome, which is approaching the 60% of the total market share, as of May 2017 (Netmarketshare.com, 2017).
+
+Despite the rise in browser upgrades, many people still use outdated browsers as their default. They withhold on the great features the web has to offer. On would say they are ignorant, and that it's their own fault if they do miss out. But that should not be the case. These users need to be able to experience websites/applications as they're inteded to. While some interactions may recede, the content should be reachable in any way.  
+This all means that developers should progressively enhance the application, keeping their entire group of users in mind at all costs. Maybe some day this will be an obsolete problem, but untill then, developers are obliged to build to translate a design in a usable product for every browser.
 
 ## Resources
 **Lea Verou. (2012). Contrast Ratio.**  
@@ -55,3 +62,6 @@ A full list of the WCAG 2.0 guidelines can be found on the [W3C website](https:/
 
 **W3C. (2008). W3C Web Standard Defines Accessibility for Next Generation Web**  
 *https://www.w3.org/2008/12/wcag20-pressrelease.html*
+
+**Netmarketshare.com. (2017). Desktop Top Browser Share Trend**  
+*https://www.netmarketshare.com/*
