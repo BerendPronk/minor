@@ -51,17 +51,17 @@ Despite the rise in browser upgrades, many people still use outdated browsers as
 This all means that developers should progressively enhance the application, keeping their entire group of users in mind at all costs. Maybe some day this will be an obsolete problem, but untill then, developers are obliged to build to translate a design in a usable product for every browser.
 
 ## Resources
-**Lea Verou. (2012). Contrast Ratio.**  
-*http://leaverou.github.io/contrast-ratio*
+Lea Verou. (2012). *Contrast Ratio*.  
+http://leaverou.github.io/contrast-ratio
 
-**Peter Paul Koch. (2017). Choosing the web's future.**  
-*https://quirksmode.org/presentations/Spring2017/goingwrong_vanlanschot.pdf*
+Peter Paul Koch. (2017). *Choosing the web's future*.  
+https://quirksmode.org/presentations/Spring2017/goingwrong_vanlanschot.pdf
 
-**Felix Richter. (2016). The U.S. Lags Behind in Fiber Adoption**  
-*https://www.statista.com/chart/4392/fiber-adoption-in-oecd-countries/*
+Felix Richter. (2016). *The U.S. Lags Behind in Fiber Adoption*.  
+https://www.statista.com/chart/4392/fiber-adoption-in-oecd-countries/
 
-**W3C. (2008). W3C Web Standard Defines Accessibility for Next Generation Web**  
-*https://www.w3.org/2008/12/wcag20-pressrelease.html*
+W3C. (2008). *W3C Web Standard Defines Accessibility for Next Generation Web*.  
+https://www.w3.org/2008/12/wcag20-pressrelease.html
 
-**Netmarketshare.com. (2017). Desktop Top Browser Share Trend**  
-*https://www.netmarketshare.com/*
+Netmarketshare.com. (2017). *Desktop Top Browser Share Trend*.  
+https://www.netmarketshare.com/
