@@ -50,17 +50,17 @@ The name 'A11y' is short for saying 'Accessibility'. The number eleven stands fo
 If you are a developer, and want to know more about developing with accessibility in mind; do checkout the webseries of 'A11ycasts' made by Rob Dodson for Google Chrome. As of the time this article is being written, a set of 18 short videos have been uploaded to the A11ycasts series. They are easy to follow and are full of information about accessibility on the web.
 
 ## References
-**The A11Y Project. (2013). MYTH: Accessibility is 'blind people'.**  
-*http://a11yproject.com/posts/myth-accessibility-is-blind-people/*
+The A11Y Project. (2013). *MYTH: Accessibility is 'blind people'*.  
+http://a11yproject.com/posts/myth-accessibility-is-blind-people/
 
-**DanielD. (2009). WAI early days.**  
-*https://www.w3.org/WAI/history*
+DanielD. (2009). *WAI early days*.  
+https://www.w3.org/WAI/history
 
-**Marco. (2014). What is WAI-ARIA, what does it do for me, and what not?**  
-*https://www.marcozehe.de/2014/03/27/what-is-wai-aria-what-does-it-do-for-me-and-what-not/*
+Marco. (2014). *What is WAI-ARIA, what does it do for me, and what not?*  
+https://www.marcozehe.de/2014/03/27/what-is-wai-aria-what-does-it-do-for-me-and-what-not/
 
-**The A11y Project. (2013). Accessibility is hard :(.**  
-*http://a11yproject.com/about.html*
+The A11y Project. (2013). *Accessibility is hard :(*.  
+http://a11yproject.com/about.html
 
-**Rob Dodson. (2016). Introducing A11ycasts! -- A11ycasts #01.**  
-*https://www.youtube.com/watch?v=HtTyRajRuyY*
+Rob Dodson. (2016). *Introducing A11ycasts! -- A11ycasts #01*.  
+https://www.youtube.com/watch?v=HtTyRajRuyY
