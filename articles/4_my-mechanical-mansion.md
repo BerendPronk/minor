@@ -26,8 +26,8 @@ Please do try to experiment with this technology yourself. When you doubt your t
 
 ## Resources
 
-**Connie Guglielmo. (2014). CES LIVE: Cisco's Chambers Says Internet of Everything, $19 Trillion Opportunity, Is Next Big Thing**  
-*https://www.forbes.com/sites/connieguglielmo/2014/01/07/ces-live-cisco-ceo-chambers-to-deliver-keynote/#11f9285b6b1d*
+Connie Guglielmo. (2014). *CES LIVE: Cisco's Chambers Says Internet of Everything, $19 Trillion Opportunity, Is Next Big Thing*.  
+https://www.forbes.com/sites/connieguglielmo/2014/01/07/ces-live-cisco-ceo-chambers-to-deliver-keynote/#11f9285b6b1d
 
-**Goldman Sachs and BI Intelligence. (2016). The average cost of IoT sensors is falling**  
-*https://www.theatlas.com/charts/BJsmCFAl*
+Goldman Sachs and BI Intelligence. (2016). *The average cost of IoT sensors is falling*.  
+https://www.theatlas.com/charts/BJsmCFAl
