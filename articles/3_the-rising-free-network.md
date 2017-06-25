@@ -14,11 +14,12 @@ The long-range radio network allow every connection to be bi-directional, meanin
 Everyone interested can be part of this revolution by investing in a '[The Things Gateway](https://shop.thethingsnetwork.com/index.php/product/the-things-gateway/)', which is basically a router between the connected devices and the internet.
 
 ## Resources
-**Arnoud Wokke. (2015). Ondernemer bouwt LoRa-netwerk voor internet-of-things in Amsterdam**  
-*https://tweakers.net/nieuws/104851/ondernemer-bouwt-lora-netwerk-voor-internet-of-things-in-amsterdam.html*
+Arnoud Wokke. (2015). *Ondernemer bouwt LoRa-netwerk voor internet-of-things in Amsterdam*.  
+https://tweakers.net/nieuws/104851/ondernemer-bouwt-lora-netwerk-voor-internet-of-things-in-amsterdam.html
 
-**The Things Network. (2015). The Things Network**  
-*https://www.thethingsnetwork.org/*
+The Things Network. (2015). *The Things Network*.  
+https://www.thethingsnetwork.org/
 
-**LoRa Alliance. (n.d.). LoRa Alliance™ Technology**  
-*https://www.lora-alliance.org/What-Is-LoRa/Technology*
+LoRa Alliance. (n.d.). *LoRa Alliance™ Technology*.  
+Retrieved July 18th 2017 from  
+https://www.lora-alliance.org/What-Is-LoRa/Technology
