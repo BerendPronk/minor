@@ -64,6 +64,6 @@ https://www.youtube.com/watch?v=5d7-qnFk_sk
 Retrieved July 25th 2017 from  
 https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git
 
-*History of free and open-source software*. (n.d.).
+*History of free and open-source software*. (n.d.).  
 Retrieved July 25th 2017 from  
 https://en.wikipedia.org/wiki/History_of_free_and_open-source_software
