@@ -6,6 +6,8 @@ I wrote follow-up articles of five Weekly Nerds total. Links to these articles c
 
 ## February 7th, 2017 - Stephen Hay
 
+![Sketchnotes Stephen Hay](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/sketchnotes/07-02-2017_stephen-hay.jpg)
+
 The user experience consultant Stephen Hay was invited to speak to us about his expertise. Design, that is. More specifically; design for the web. Also author of a book about this topic, called: 'Responsive Design Workflow'.
 
 He introduced himself by mentioning the location he natively comes from, California USA. He lived there till the year 1992, when he came to The Netherlands to live in Leeuwarden.
@@ -21,6 +23,8 @@ Stephen ended his talk by answering some quick-questions, besides the 'bigger' q
 ---
 
 ## February 14th, 2017 - Justus Sturkenboom
+
+![Sketchnotes Justus Sturkenboom](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/sketchnotes/14-02-2017_justus-sturkenboom.jpg)
 
 One of the lecturers of the University of Applied sciences, and my coach of the year prior to this minor, Justus Sturkenboom wanted to give us multiple tips about the benefits of sketchnoting. Not only that; he tackled the tools necessary for sketching notes of great quality.
 
@@ -43,6 +47,9 @@ Justus can talk very fast. He proved that once again by finishing his presenatio
 ---
 
 ## February 28th, 2017 - Peter Paul Koch
+
+![Sketchnotes Peter Paul Koch](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/sketchnotes/28-02-2017_peter-paul-koch.jpg)
+
 
 The initial speaker of this Weekly Nerd was unable to give a presentation, so we received more of an improvised talk by someone else, instead.
 The name of the speaker was Peter Paul Koch, a front-end developer and founder of Fronteers.
@@ -72,6 +79,8 @@ https://github.com/BerendPronk/minor/blob/master/articles/2_5-levels-of-ignoranc
 
 ## March 14th, 2017 - Titus Wormer
 
+![Sketchnotes Titus Wormer](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/sketchnotes/14-03-2017_titus-wormer.jpg)
+
 After a few weeks of playing around in with GitHub during the first semester of our minor, we received a lecture about the Git software from our lecturer Titus Wormer.
 
 Titus began his talk by showing a short video explaining the concept of Git, and upstreams in general. It featured a lot of metaphors, for us to get a good grip of the subject. The video was about the cookie recipe of some fictional grandma, and how family members were able to improve on it by creating branches on the recipes. Here they added their own ideas into the mix, following by a pull-request towards grandma.  
@@ -90,7 +99,9 @@ https://github.com/BerendPronk/minor/blob/master/articles/5_the-history-of-open-
 
 ---
 
-## March 21st - Jasper Moelker
+## March 21st, 2017 - Jasper Moelker
+
+![Sketchnotes Jasper Moelker](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/sketchnotes/21-03-2017_jasper-moelker.jpg)
 
 The fourth Weekly Nerd was given by a front-end developer from 'De Voorhoede', Jasper Moelker, at the office he works.
 The topic of this presentation was Progressive Enhancement. A very broad topic, with key components to keep in mind when developing a website for the end-user. 
@@ -108,7 +119,9 @@ After about half an hour, Jasper collected everyone's sheet and we discussed the
 
 ---
 
-## March 28th - Bram Duvigneau
+## March 28th, 2017 - Bram Duvigneau
+
+![Sketchnotes Bram Duvigneau](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/sketchnotes/28-03-2017_bram-duvigneau.jpg)
 
 The announcement of this talk was made at the start of the minor, and it sure was something to look forward to. Bram is a blind developer who is specialized in accessibility. He arrived accompabied by his guidance dog, which was able to sit quietly in the same spot for the entire presentation.
 
@@ -123,7 +136,9 @@ https://github.com/BerendPronk/minor/blob/master/articles/1_critical-convenience
 
 ---
 
-## April 11th - Niels Leenheer
+## April 11th, 2017 - Niels Leenheer
+
+![Sketchnotes Niels Leenheer](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/sketchnotes/11-04-2017_niels-leenheer.jpg)
 
 It was that time again; time to listen to another installment of the Weekly Nerd presentations, when we all just started a new semester. We received a new set of courses to practise: Real-time Web and Web of Things. Both of which are about letting multiple devices communicate with each other.
 
@@ -148,7 +163,10 @@ https://github.com/BerendPronk/minor/blob/master/articles/4_my-mechanical-mansio
 
 ---
 
-## April 21st - Peter Peerdeman
+## April 21st, 2017 - Peter Peerdeman
+
+![Sketchnotes Peter Peerdeman](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/sketchnotes/21-04-2017_peter-peerdeman.jpg)
+
 
 This Weekly Nerd was held on the week's friday, because the attending developer, Peter Peerdeman, was unable to show up that tuesday. We already knew who Peter was, as he coached our group during the second project week of the minor; the project where we built a prototype application / feature for either one of Lifely's products: [Freshheroes](https://freshheroes.com/) or [Part-up](https://www.part-up.com/).
 
@@ -163,7 +181,11 @@ The end of the presentation on itself was not enough to know anything crucial on
 
 ---
 
-## May 3rd - Eva-Lotta Lamm
+## May 3rd, 2017 - Eva-Lotta Lamm
+
+![Sketchnotes Eva-Lotta Lamm](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/sketchnotes/03-05-2017_eva-lotte-lamm.jpg)
+*Unfortunately my sketchnotes contain a wrong interpeteation of her name. It should be 'Eva-Lotta Lamm'.*
+
 Quite some time has passed since the latest Weekly Nerd. This specific presentation was not given in one of our available classrooms, but in the CMD-Medialounge, instead. Also, the talk was organized via Eventbrite and presented as an ICONS-meeting, so other students of the university could join.
 
 The speaker of the event was Eva-Lotta Lamm, who is an expert in making sketchnotes.  
@@ -179,7 +201,10 @@ While not being a presentation specifically meant for our minor, the talk Eva ga
 
 ---
 
-## May 16th - Nick, Lifely
+## May 16th, 2017 - Nick, Lifely
+
+![Sketchnotes Nick from Lifely](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/sketchnotes/16-05-2017_nick-lifely.jpg)
+
 The CEO of the already familiar Lifely came to visit us for a Q&A, as a stand-in for the speaker that was not able to attend this Weekly Nerd.
 
 A short recap of his life as an entrepreneur was his way of introducing himself. He mentioned that he started being a businessman at age twelve, selling Pokèmon cards to people all over the world.  
@@ -198,7 +223,10 @@ A final question also was about success, more specifically, about success in pro
 
 ---
 
-## May 23rd - Guido Bouman
+## May 23rd, 2017 - Guido Bouman
+
+![Sketchnotes Guido Bouman](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/sketchnotes/23-05-2017_guido-bouman.jpg)
+
 The interaction engineer of the nerdy company Q42, Guido, gave us a visit to talk about the work that the company does for their clients. Though they work for clients, Guido mentioned that the user of the final product is the most important factor they have in mind during development.
 
 Q42 consists of three locations, spread all over the globe. The combined amount of nerds at work on these locations, add up to 67.  
@@ -225,7 +253,10 @@ https://github.com/BerendPronk/minor/blob/master/articles/3_the-rising-free-netw
 
 ---
 
-## May 31st - Léonie Watson
+## May 31st, 2017 - Léonie Watson
+
+![Sketchnotes Léonie Watson](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/sketchnotes/31-05-2017_leonie-watson.jpg)
+
 The final Weekly Nerd was another presentation at the ICONS event. This time with someone in the spotlight who came all the way from the United Kingdom. Léonie is a blind webdeveloper for quite some time now, basically since the web started existing back in 1993. She hasn't always been blind. During the start of her development career Léonie unfortunately lost her eyesight.
 Before starting with an actual presentation, she mentioned that she frequently gives talks like the one she was about to give us, for similar and much larger audiences.
 
