@@ -47,17 +47,17 @@ https://www.youtube.com/watch?v=lrcdhzr2qnk
 Retrieved July 25th 2017 from  
 https://www.gnu.org/philosophy/free-sw.en.html
 
-Richard Stallman. (2001). *Free Software: Freedom and Cooperation*  
+Richard Stallman. (2001). *Free Software: Freedom and Cooperation*.  
 https://www.gnu.org/events/rms-nyu-2001-transcript.txt
 
 *GNU Hurd/ history*. (n.d.).  
 Retrieved July 25th 2017 from  
 https://www.gnu.org/software/hurd/history.html
 
-David Pakman. (2017). *Richard Stallman Explains Everything*  
+David Pakman. (2017). *Richard Stallman Explains Everything*.  
 https://www.youtube.com/watch?v=jUibaPTXSHk
 
-The Linux Foundation. (2012). *How Linux is Built*  
+The Linux Foundation. (2012). *How Linux is Built*.  
 https://www.youtube.com/watch?v=5d7-qnFk_sk
 
 *1.2 Getting Started - A Short History of Git* (n.d.).  
